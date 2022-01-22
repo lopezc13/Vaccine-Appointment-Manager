@@ -1,11 +1,16 @@
 import java.util.LinkedList;
 import java.util.Scanner;
-
+/* Authors: Christopher Lopez and Warren Chang
+ * Written Fall of 2020
+ * 
+ * 
+ * */
 
 public class Administrator {
 
-	public static void main(String[] args) {
-		
+	// Initializes program
+	public static void Init() 
+	{
 		Scanner userInput = new Scanner(System.in); // Scanner class for user input
 		Scanner keyboard = new Scanner(System.in); // Scanner class for clinican list
 		
@@ -398,7 +403,6 @@ public class Administrator {
 			
 		}while (choice != 15);
 		
-		
 	}
 	
 	//////////////////////////////////////////////////////
@@ -415,9 +419,9 @@ public class Administrator {
 			System.out.println("3. Check PrevaccinationQuestionaire status");
 			System.out.println("4. Check number of doses of a Recipient");
 			System.out.println("5. Print all Recipient current information");
-			System.out.println("6.Create a Clinician entry:");
-			System.out.println("7.Update a Clinicians institution:");
-			System.out.println("8.Update a Clinicians ID number:");
+			System.out.println("6. Create a Clinician entry:");
+			System.out.println("7. Update a Clinicians institution:");
+			System.out.println("8. Update a Clinicians ID number:");
 			System.out.println("9. Update a Clinicians vaccine invetory");
 			System.out.println("10. Remove a Clinician");
 			System.out.println("11. Print List of Clincians");
@@ -454,4 +458,18 @@ public class Administrator {
 			appointmentList.get(Apt).printInfo();
 		}
 	}
+	
+	
+	
+	public static void main(String[] args)
+	{
+	
+	Init();
+		
+	}
+	
+	
+	
+	
+	
 }
